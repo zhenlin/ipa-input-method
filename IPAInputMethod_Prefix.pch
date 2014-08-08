@@ -1,0 +1,1 @@
+//// Prefix header for all source files of the 'IPAInputMethod' target in the 'IPAInputMethod' project//#ifdef __OBJC__    #import <Cocoa/Cocoa.h>	#import <InputMethodKit/InputMethodKit.h>#endif
