@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 	identifier = [[NSBundle mainBundle] bundleIdentifier];
     server = [[IMKServer alloc] initWithName:connectionName bundleIdentifier:identifier];
 	
-	[NSBundle loadNibNamed:@"MainMenu" owner:[NSApplication sharedApplication]];
+	[[NSBundle mainBundle] loadNibNamed:@"MainMenu" owner:[NSApplication sharedApplication] topLevelObjects:NULL];
 	
 	candidatesWindow = [[IMKCandidates alloc] initWithServer:server panelType:kIMKSingleColumnScrollingCandidatePanel];
 	
